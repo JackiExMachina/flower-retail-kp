@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#151515" />
+<meta name="color-scheme" content="dark" />
+<meta name="description" content="Коммерческое предложение: сайт, карты, каталог, аналитика и digital-сопровождение." />
+<meta name="robots" content="noindex,nofollow,noarchive" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="PLUTON.CORE" />
+<meta property="og:title" content="PLUTON.CORE — Digital Launch" />
+<meta property="og:description" content="Сайт, карты, каталог, аналитика и digital-сопровождение для цветочного бизнеса." />
+<meta property="og:url" content="https://jackiexmachina.github.io/flower-retail-kp/" />
+<meta name="twitter:card" content="summary" />
+<title>PLUTON.CORE — Digital Launch</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23151515'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial,sans-serif' font-size='38' fill='%23f3f2ed'%3EP%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#151515;
+  --fg:#f3f2ed;
+  --muted:#9b9b95;
+  --line:rgba(243,242,237,.22);
+  --line-soft:rgba(243,242,237,.10);
+  --max:1440px;
+  --pad:clamp(22px,4.4vw,72px);
+  --display:"Inter","Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
+  --body:"Inter","Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.45;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:1000;opacity:.014;mix-blend-mode:screen;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.34'/%3E%3C/svg%3E");
+}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(100%,var(--max));margin:auto;padding-inline:var(--pad)}
+.rule{height:1px;background:var(--line);transform-origin:left;transform:scaleX(0);transition:transform 1.2s cubic-bezier(.2,.75,.2,1)}
+.reveal.in .rule,.rule.in{transform:scaleX(1)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.75,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.kicker{font-size:11px;letter-spacing:.19em;text-transform:uppercase;color:var(--muted)}
+.index{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.display{font-family:var(--display);font-weight:500;letter-spacing:-.055em;line-height:.92;text-wrap:balance;text-transform:uppercase}
+.mono{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+header{min-height:100svh;display:flex;flex-direction:column;padding:24px 0 28px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+.hero{flex:1;display:grid;grid-template-columns:1fr;align-content:end;padding-top:12vh;padding-bottom:5vh}
+.hero h1{font-size:clamp(64px,12.8vw,190px);margin:0;max-width:12ch}
+.hero h1 span{display:block;overflow:hidden}
+.hero h1 i{font-style:normal;display:block;transform:translateY(110%);animation:titleUp 1.15s .08s cubic-bezier(.16,.8,.2,1) forwards}
+.hero h1 span:nth-child(2) i{animation-delay:.18s}
+@keyframes titleUp{to{transform:none}}
+.hero-meta{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:clamp(42px,7vw,100px);padding-top:18px;border-top:1px solid var(--line)}
+.hero-meta p{margin:0;max-width:34ch;color:#d4d3cd}
+.hero-meta .right{text-align:right;justify-self:end;color:var(--muted);font-size:13px}
+section{padding:clamp(86px,10vw,160px) 0}
+.section-head{display:grid;grid-template-columns:minmax(110px,.32fr) 1fr;gap:32px;align-items:start;margin-bottom:clamp(56px,8vw,110px)}
+.section-head h2{font-size:clamp(48px,7.4vw,112px);margin:-.08em 0 0;max-width:11ch}
+.section-copy{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,80px);margin-left:calc(110px + 32px);max-width:1000px}
+.section-copy p{margin:0;color:#c8c7c1;font-size:clamp(17px,1.45vw,22px)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.grid3 article{padding:28px clamp(18px,2.4vw,36px) 38px 0;min-height:330px;display:flex;flex-direction:column}
+.grid3 article+article{border-left:1px solid var(--line);padding-left:clamp(18px,2.4vw,36px)}
+.card-num{font-size:12px;color:var(--muted);margin-bottom:auto}
+.grid3 h3,.offer h3,.monthly h3{font-size:clamp(28px,3vw,46px);font-weight:500;letter-spacing:-.035em;margin:70px 0 18px;text-transform:uppercase}
+.grid3 p,.offer p,.monthly p{margin:0;color:#adada6;max-width:42ch}
+.offers{border-top:1px solid var(--line)}
+.dev-process{margin-top:clamp(72px,8vw,120px)}
+.dev-process>.kicker{margin-bottom:24px}
+.dev-steps{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.dev-steps article{min-height:260px;padding:24px 24px 30px 0}
+.dev-steps article+article{border-left:1px solid var(--line);padding-left:24px}
+.dev-steps span{font-size:12px;color:var(--muted)}
+.dev-steps h3{font-size:clamp(22px,2vw,32px);font-weight:500;letter-spacing:-.03em;text-transform:uppercase;margin:76px 0 12px}
+.dev-steps p{margin:0;color:var(--muted);font-size:14px;max-width:30ch}
+.dev-included{margin-top:28px}
+.offer{display:grid;grid-template-columns:.7fr 1fr .8fr;gap:32px;align-items:start;padding:34px 0 46px;border-bottom:1px solid var(--line);position:relative}
+.offer h3{margin:0}.offer .desc{font-size:15px}.price{font-family:var(--display);font-size:clamp(46px,5.5vw,86px);line-height:.95;letter-spacing:-.05em;text-align:right;white-space:nowrap}
+.price small{display:block;font-family:var(--body);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:12px}
+.list{margin-top:24px;display:flex;flex-wrap:wrap;gap:8px 18px;color:#d1d0ca;font-size:13px}
+.list span::before{content:"— ";color:#696963}
+.manifesto{padding:12vw 0 10vw}
+.manifesto p{font-family:var(--display);font-size:clamp(42px,6.9vw,104px);letter-spacing:-.052em;line-height:.98;margin:0;max-width:13ch}
+.manifesto p em{font-style:normal;color:#777771}
+.features{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}
+.feature{min-height:250px;padding:28px 34px 40px 0;border-bottom:1px solid var(--line)}
+.feature:nth-child(even){border-left:1px solid var(--line);padding-left:34px}
+.feature h3{font-weight:500;font-size:27px;margin:58px 0 14px;letter-spacing:-.03em;text-transform:uppercase}.feature p{color:var(--muted);margin:0;max-width:46ch}
+.note{display:grid;grid-template-columns:.6fr 1.4fr;gap:32px;padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.note strong{font-size:12px;letter-spacing:.12em;text-transform:uppercase}.note p{margin:0;color:#c0bfb8;max-width:70ch}
+.monthly-total{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.monthly-total .price{text-align:left}.monthly-total p{margin:0 0 7px;color:var(--muted);max-width:34ch}
+.monthly-grid{display:grid;grid-template-columns:1fr 1fr}.monthly{padding:32px 34px 42px 0;border-bottom:1px solid var(--line)}.monthly+.monthly{border-left:1px solid var(--line);padding-left:34px}.monthly h3{margin:64px 0 12px}.monthly .subprice{font-size:14px;color:#deddd7;margin-bottom:28px}
+.start-packs{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.pack{padding:38px 40px 60px 0;border-bottom:1px solid var(--line)}.pack+.pack{border-left:1px solid var(--line);padding-left:40px}.pack .price{text-align:left;margin:80px 0 28px}.pack h3{font-size:30px;font-weight:500;letter-spacing:-.035em;margin:0 0 12px;text-transform:uppercase}.pack p{margin:0;color:var(--muted);max-width:48ch}
+.steps{counter-reset:s}.step{counter-increment:s;display:grid;grid-template-columns:110px 1fr 1fr;gap:32px;padding:28px 0;border-top:1px solid var(--line);align-items:start}.step:last-child{border-bottom:1px solid var(--line)}.step::before{content:"0" counter(s);font-size:12px;color:var(--muted)}.step h3{margin:0;font-size:clamp(24px,2.5vw,38px);font-weight:500;letter-spacing:-.035em;text-transform:uppercase}.step p{margin:2px 0 0;color:var(--muted);max-width:48ch}
+footer{padding:20vh 0 34px}.footer-big{font-family:var(--display);font-size:clamp(64px,13vw,190px);line-height:.82;letter-spacing:-.065em;margin:0 0 70px}.footer-row{display:grid;grid-template-columns:1fr auto auto;align-items:start;gap:24px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}.footer-row a{color:var(--fg);border-bottom:1px solid var(--line);padding-bottom:2px}
+@media(max-width:820px){
+  .mobile-compact{font-size:clamp(36px,10.5vw,58px)!important;line-height:.94}
+  .hero{padding-top:18vh}.hero h1{font-size:clamp(60px,20vw,118px)}.hero-meta{grid-template-columns:1fr}.hero-meta .right{text-align:left;justify-self:start}
+  .section-head{grid-template-columns:1fr;gap:18px}.section-head h2{font-size:clamp(46px,14vw,82px)}.section-copy{margin-left:0;grid-template-columns:1fr}
+  .grid3,.features,.monthly-grid,.start-packs{grid-template-columns:1fr}
+  .dev-steps{grid-template-columns:1fr}.dev-steps article{min-height:0;padding:22px 0 28px;border-bottom:1px solid var(--line)}.dev-steps article+article{border-left:0;padding-left:0}.dev-steps article:last-child{border-bottom:0}.dev-steps h3{margin:34px 0 10px}.grid3 article{min-height:230px;border-bottom:1px solid var(--line)}.grid3 article+article{border-left:0;padding-left:0}.grid3 article:last-child{border-bottom:0}
+  .offer{grid-template-columns:1fr}.offer .price{text-align:left;margin-top:26px}.features .feature:nth-child(even),.monthly+.monthly,.pack+.pack{border-left:0;padding-left:0}
+  .monthly-total{display:block}.monthly-total p{margin-top:24px}.step{grid-template-columns:56px 1fr}.step p{grid-column:2}.note{grid-template-columns:1fr}.manifesto{padding:26vw 0 20vw}.footer-row{display:grid;grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.rule{transform:none}.hero h1 i{transform:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav"><span>Commercial proposal</span><span class="mono">30 / 09 / 2026</span></div>
+  <div class="wrap hero">
+    <div>
+      <div class="kicker" style="margin-bottom:18px">Flower retail / digital launch</div>
+      <h1 class="display"><span><i>DIGITAL</i></span><span><i>LAUNCH</i></span></h1>
+      <div class="hero-meta">
+        <p>Цифровая система продаж и присутствия для цветочного бизнеса с 15-летней офлайн-репутацией.</p>
+        <p class="right">Сайт · карты · каталог · аналитика · ведение</p>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+<section>
+  <div class="wrap reveal">
+    <div class="section-head"><div class="index">01 / ЗАДАЧА</div><h2 class="display">15 лет офлайн — теперь в цифре</h2></div>
+    <div class="section-copy"><p>Переносим накопленную репутацию и ассортимент в цифровой контур, который можно находить, смотреть, заказывать и регулярно обновлять.</p><p>Не отдельный «сайт ради сайта», а связка из сайта, карт, каталога, аналитики и регулярного ведения.</p></div>
+  </div>
+</section>
+<section>
+  <div class="wrap reveal">
+    <div class="section-head"><div class="index">02 / СИСТЕМА</div><h2 class="display">Три контура</h2></div>
+    <div class="grid3">
+      <article><div class="card-num">01</div><h3>Сайт</h3><p>Каталог, категории, карточки, корзина или заявка, SEO, аналитика и управляемая админка.</p></article>
+      <article><div class="card-num">02</div><h3>Карты</h3><p>Яндекс Бизнес + 2ГИС: карточки, услуги, фото, каталог, отзывы, связь с сайтом и продвижение.</p></article>
+      <article><div class="card-num">03</div><h3>Ведение</h3><p>Сезонные обновления, новые товары, SEO карточек, аналитика и небольшие изменения без постоянной разработки.</p></article>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap reveal">
+    <div class="section-head"><div class="index">03 / САЙТ</div><h2 class="display">Два формата</h2></div>
+    <div class="offers">
+      <article class="offer"><div><div class="kicker">Catalog / без онлайн-оплаты</div><h3>Сайт-каталог</h3><div class="list"><span>категории</span><span>карточки</span><span>корзина / форма</span><span>админка</span><span>адаптив</span><span>SEO</span><span>Метрика</span><span>деплой</span></div></div><p class="desc">Подходит, если заказ после отправки подтверждает менеджер.</p><div class="price mono">90 000 ₽</div></article>
+      <article class="offer"><div><div class="kicker">E-commerce / онлайн-оплата</div><h3>Интернет-магазин</h3><div class="list"><span>всё из каталога</span><span>checkout</span><span>эквайринг</span><span>статусы заказа</span><span>уведомления</span><span>тестирование</span></div></div><p class="desc">Полный базовый цикл покупки на сайте с базовой интеграцией оплаты.</p><div class="price mono">120 000 ₽</div></article>
+    </div>
+    <div class="dev-process">
+      <div class="kicker">Как проходит разработка</div>
+      <div class="dev-steps">
+        <article><span>01</span><h3>Структура</h3><p>Определяем страницы, сценарии, категории, путь клиента и состав каталога.</p></article>
+        <article><span>02</span><h3>Дизайн</h3><p>Собираем визуальную систему, ключевые экраны и адаптив под мобильные устройства.</p></article>
+        <article><span>03</span><h3>Сборка</h3><p>Переносим дизайн в рабочий сайт, настраиваем CMS, формы, каталог и базовые интеграции.</p></article>
+        <article><span>04</span><h3>Настройка</h3><p>Подключаем Метрику, SEO-поля, домен, технические настройки и, при необходимости, оплату.</p></article>
+        <article><span>05</span><h3>Запуск</h3><p>Тестируем сценарии, проверяем мобильную версию, исправляем критичные ошибки и публикуем.</p></article>
+      </div>
+      <div class="note dev-included"><strong>В стоимость входит</strong><p>Структура и прототипирование, дизайн, адаптив, сборка, базовое наполнение, CMS, формы, SEO-настройка, Яндекс Метрика, тестирование и запуск. Тексты, фото, сложные интеграции и массовое наполнение сверх согласованного объёма оцениваются отдельно.</p></div>
+    </div>
+  </div>
+</section>
+<div class="wrap manifesto reveal"><p>Сайт — это <em>не витрина.</em> Он должен быть удобен клиенту и управляем бизнесом.</p></div>
+<section>
+  <div class="wrap reveal">
+    <div class="section-head"><div class="index">04 / ЧТО ВНУТРИ</div><h2 class="display mobile-compact">Редактируемо<br>Измеримо<br>Безопасно в&nbsp;поддержке</h2></div>
+    <div class="features">
+      <article class="feature"><div class="index">01</div><h3>Админка</h3><p>Товары, цены, категории, статусы и SEO-поля редактируются из CMS.</p></article>
+      <article class="feature"><div class="index">02</div><h3>Каталог</h3><p>Сезонные подборки, услуги, букеты, оформление и быстрые сценарии заказа.</p></article>
+      <article class="feature"><div class="index">03</div><h3>Аналитика</h3><p>Метрика, цели и понимание: что смотрят, откуда приходят и что покупают.</p></article>
+      <article class="feature"><div class="index">04</div><h3>Платформа</h3><p>Базовый безопасный сценарий — Tilda. Отдельная CMS или кастомная разработка — только если упрёмся в ограничения.</p></article>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap reveal">
+    <div class="section-head"><div class="index">05 / КАРТЫ</div><h2 class="display">Яндекс Бизнес + 2ГИС</h2></div>
+    <div class="offer" style="border-top:1px solid var(--line)"><div><div class="kicker">Разовая базовая настройка</div><h3>Запуск карт</h3><div class="list"><span>карточки компании</span><span>категории</span><span>описание</span><span>услуги</span><span>товары / витрина</span><span>ссылки</span><span>часы работы</span><span>связка с сайтом</span></div></div><p class="desc">Базовая структура для отзывов и дальнейшего продвижения.</p><div class="price mono">20 000 ₽</div></div>
+    <div class="note"><strong>Важно</strong><p>Рекламная подписка Яндекс Бизнеса и платное продвижение в 2ГИС оплачиваются клиентом отдельно. Ориентир — от ~20 000 ₽/мес; точная сумма зависит от предложения площадки.</p></div>
+  </div>
+</section>
+<section>
+  <div class="wrap reveal">
+    <div class="section-head"><div class="index">06 / ЕЖЕМЕСЯЧНО</div><h2 class="display mobile-compact">Два независимых модуля ведения</h2></div>
+    <div class="monthly-total"><div class="price mono">80 000 ₽<small>/ месяц за оба контура</small></div><p>Модули можно подключать вместе или по отдельности.</p></div>
+    <div class="monthly-grid">
+      <article class="monthly"><div class="index">01</div><h3>Яндекс Бизнес + 2ГИС</h3><div class="subprice mono">40 000 ₽ / мес</div><p>Карточки и витрины, акции, сезонные изменения, товары, отзывы и ответы, статистика, контроль платного продвижения.</p></article>
+      <article class="monthly"><div class="index">02</div><h3>Сайт + каталог + SEO</h3><div class="subprice mono">40 000 ₽ / мес</div><p>Сезонная актуализация, предпраздничные обновления, системное наполнение, SEO карточек, аналитика и небольшие правки.</p></article>
+    </div>
+    <div class="note" style="border-top:0"><strong>Отдельно</strong><p>Крупные новые разделы, сложные интеграции и массовые переработки каталога оцениваются отдельно.</p></div>
+  </div>
+</section>
+<section>
+  <div class="wrap reveal">
+    <div class="section-head"><div class="index">07 / СТАРТ</div><h2 class="display">Два пакета запуска</h2></div>
+    <div class="start-packs">
+      <article class="pack"><div class="kicker">Start / Catalog</div><div class="price mono">110 000 ₽</div><h3>Сайт-каталог + карты</h3><p>Быстрый выход в онлайн без онлайн-оплаты. Заказ дальше подтверждает менеджер.</p></article>
+      <article class="pack"><div class="kicker">Start / E-commerce</div><div class="price mono">140 000 ₽</div><h3>Интернет-магазин + карты</h3><p>Онлайн-оплата и полный базовый цикл покупки на сайте.</p></article>
+    </div>
+    <div class="note" style="border-top:0"><strong>Включено</strong><p>В оба пакета входит сайт + первичная настройка Яндекс Бизнес и 2ГИС. После запуска вы решаете, подключать ли ежемесячное ведение.</p></div>
+  </div>
+</section>
+<section>
+  <div class="wrap reveal">
+    <div class="section-head"><div class="index">08 / СЛЕДУЮЩИЙ ШАГ</div><h2 class="display">Сначала — материалы</h2></div>
+    <div class="steps">
+      <article class="step"><h3>УТП / позиционирование</h3><p>Коротко: почему покупают именно здесь.</p></article>
+      <article class="step"><h3>3–5 фото</h3><p>Не для этой страницы — для будущего сайта, чтобы определить визуальный характер бизнеса.</p></article>
+      <article class="step"><h3>Услуги и цены</h3><p>Букеты, оформление, доставка, дополнительные услуги и вилки цен.</p></article>
+      <article class="step"><h3>Доставка + оплата</h3><p>Зоны, стоимость, интервалы, срочная доставка, самовывоз и решение по онлайн-оплате.</p></article>
+    </div>
+    <div class="note" style="margin-top:42px"><strong>Срок</strong><p>Ориентир по запуску — 4–6 недель после получения материалов и согласования структуры.</p></div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap reveal"><p class="footer-big">READY<br>TO SCOPE.</p><div class="footer-row"><span>PLUTON.CORE — дизайн, разработка и digital-сопровождение</span><a href="https://t.me/ps_forest_inside" target="_blank" rel="noopener noreferrer">@ps_forest_inside</a><span class="mono">30 / 09 / 2026</span></div></div>
+</footer>
+<script>
+const io=new IntersectionObserver((entries)=>{for(const e of entries){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}},{threshold:.05,rootMargin:'0px 0px -10px 0px'});
+document.querySelectorAll('.reveal,.rule').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

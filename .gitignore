@@ -1,0 +1,17 @@
+# OS & IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.tmp
+
+# Environment & Secrets
+.env
+.env.*
+*.local
+
+# Node & Python caches
+node_modules/
+__pycache__/
+*.pyc
